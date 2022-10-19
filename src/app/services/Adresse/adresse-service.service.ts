@@ -12,12 +12,21 @@ export class AdresseService {
 
   constructor(private http:HttpClient) { }
   
-  public getAdresses(){
+  public findAll(){
     return this.http.get<Adresse[]>(API_URL_Adresse)
     
   }
 
-  public save(newAdresse:Adresse){
-    return this.http.post<Adresse>(API_URL_Adresse , newAdresse)
+  public save(adresse:Adresse){
+    return this.http.post<Adresse>(API_URL_Adresse , adresse)
   }
+
+  public findById(id:any){
+    return this.http.get<Adresse>(`${API_URL_Adresse}/${id}`)
+  }
+
+  public delete(id:any){
+    return this.http.delete<Adresse>(`${API_URL_Adresse}/${id}`)
+  }
+
 }
