@@ -21,11 +21,11 @@ export class AdresseService {
     return this.http.post<Adresse>(API_URL_Adresse , adresse)
   }
 
-  public findById(id:any){
+  public findById(id:number){
     return this.http.get<Adresse>(`${API_URL_Adresse}/${id}`)
   }
 
-  public delete(id:any){
+  public delete(id:number){
     return this.http.delete<Adresse>(`${API_URL_Adresse}/${id}`)
   }
 
