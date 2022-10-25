@@ -8,7 +8,7 @@ const API_URL_ProduitGros = environment.API_URL+"/produitgros"
 @Injectable({
   providedIn: 'root'
 })
-export class ProduitGrosServiceService {
+export class ProduitGrosService {
 
   constructor(private http:HttpClient) { }
   

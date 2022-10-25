@@ -8,7 +8,7 @@ const API_URL_Client = environment.API_URL+"/client"
 @Injectable({
   providedIn: 'root'
 })
-export class ClientServiceService {
+export class ClientService {
 
   constructor(private http:HttpClient) { }
   

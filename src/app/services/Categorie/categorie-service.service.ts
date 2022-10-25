@@ -8,7 +8,7 @@ const API_URL_Categorie = environment.API_URL+"/categorie"
 @Injectable({
   providedIn: 'root'
 })
-export class CategorieServiceService {
+export class CategorieService {
 
   constructor(private http:HttpClient) { }
   

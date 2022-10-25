@@ -8,7 +8,7 @@ const API_URL_Facture = environment.API_URL+"/facture"
 @Injectable({
   providedIn: 'root'
 })
-export class FactureServiceService {
+export class FactureService {
 
   constructor(private http:HttpClient) { }
   

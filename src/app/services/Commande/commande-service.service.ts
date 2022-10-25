@@ -8,7 +8,7 @@ const API_URL_Commande = environment.API_URL+"/commande"
 @Injectable({
   providedIn: 'root'
 })
-export class CommandeServiceService {
+export class CommandeService {
 
   constructor(private http:HttpClient) { }
   

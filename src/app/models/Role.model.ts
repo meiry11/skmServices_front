@@ -4,7 +4,6 @@ export class Role{
     constructor(
         public  id_role:number,
         public  nom_role:String,
-        public  client:Client
 
     ){}
 }

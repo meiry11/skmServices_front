@@ -8,7 +8,7 @@ const API_URL_role = environment.API_URL+"/role"
 @Injectable({
   providedIn: 'root'
 })
-export class RoleServiceService {
+export class RoleService {
 
   constructor(private http:HttpClient) { }
   

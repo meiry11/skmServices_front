@@ -8,7 +8,7 @@ const API_URL_Emballage = environment.API_URL+"/emballage"
 @Injectable({
   providedIn: 'root'
 })
-export class EmballageServiceService {
+export class EmballageService {
 
   constructor(private http:HttpClient) { }
   

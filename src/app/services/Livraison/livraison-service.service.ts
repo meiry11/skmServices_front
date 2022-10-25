@@ -9,7 +9,7 @@ const API_URL_Livraison = environment.API_URL+"/livraison"
 @Injectable({
   providedIn: 'root'
 })
-export class LivraisonServiceService {
+export class LivraisonService {
 
   constructor(private http:HttpClient) { }
   
