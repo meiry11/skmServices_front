@@ -20,6 +20,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ForgotPasswordComponent,
     AddressComponent,
     EditAddressComponent,
-    ProfileDetailsComponent
+    ProfileDetailsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,6 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

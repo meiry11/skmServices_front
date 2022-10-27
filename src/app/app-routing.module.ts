@@ -8,6 +8,7 @@ import { EditAddressComponent } from './pages/edit-address/edit-address.componen
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { ProductsingleComponent } from './pages/productsingle/productsingle.component';
 import { ProfileDetailsComponent } from './pages/profile-details/profile-details.component';
@@ -59,15 +60,11 @@ const routes: Routes = [
   },
   {
     path:'shop',component: ShopComponent
+  },
+  {
+    path:'**',component: NotFoundComponent
   }
 
-
-//   {
-//     path: 'Product/:type/:id', component: ProductPageComponent
-//   },
-//   {
-//     path:'**',component: NotFoundComponent
-//   }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
