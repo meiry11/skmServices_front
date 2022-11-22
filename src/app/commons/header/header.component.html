@@ -10,14 +10,25 @@
           <li class="nav-item active">
             <a class="nav-link" routerLink="/">Accueil </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Qui nous-sommes</a>
+          <li class="nav-item dropdown dropdown-slide">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              
+              <li><a routerLink="/product-single">Plantes</a></li>
+                  <li><a href="#">Epices</a></li>
+                  <li><a href="#">Cosmetiques</a></li>
+                  <li><a href="#">Accessoires</a></li>
+                  <li><a href="#">Tissus</a></li>
+            </ul>
           </li>
           <!-- Pages -->
           <li class="nav-item dropdown dropdown-slide">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Pages.
+              Gros
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
               <li><a routerLink="/product-single">A propos de nous</a></li>
@@ -28,6 +39,21 @@
               <li><a href="#">FAQ</a></li>
             </ul>
           </li><!-- /Pages -->
+          <!-- /emballage-->
+          <li class="nav-item dropdown dropdown-slide">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Emballages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              
+              <li><a routerLink="/product-single">Papier</a></li>
+              <li><a href="#">kraft</a></li>
+              <li><a href="#">Plastique</a></li>
+              <li><a href="#">boite</a></li>
+              <li><a href="#">Aluminium</a></li>
+            </ul>
+          </li><!-- / Emballage-->
           <!-- / Blog -->
           <li class="nav-item dropdown dropdown-slide">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
@@ -35,7 +61,8 @@
               Boutique.
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-              <li><a routerLink="/shop">Boutique</a></li>
+              <li><a routerLink="/shop">Catalogue produits</a></li>
+              <li><a routerLink="/shop">Catalogue Emballages</a></li>
               <li><a routerLink="/product-single">Details du produit</a></li>
               <li><a routerLink="/checkout">Voir</a></li>
               <li><a routerLink="/cart">Carte</a></li>
