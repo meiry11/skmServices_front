@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 navigation" id="navbar">
     <div class="container">
-      <a class="navbar-brand font-weight-bold" routerLink="/">E-Shop</a>
+      <a class="navbar-brand font-weight-bold" routerLink="/">Logo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
         aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,32 +10,59 @@
           <li class="nav-item active">
             <a class="nav-link" routerLink="/">Accueil </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Qui nous sommes</a>
+          <li class="nav-item dropdown dropdown-slide">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              
+              <li><a routerLink="/product-single">Plantes</a></li>
+                  <li><a href="#">Epices</a></li>
+                  <li><a href="#">Cosmetiques</a></li>
+                  <li><a href="#">Accessoires</a></li>
+                  <li><a href="#">Tissus</a></li>
+            </ul>
           </li>
           <!-- Pages -->
           <li class="nav-item dropdown dropdown-slide">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Pages.
+              Gros
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-              <li><a href="#">About Us</a></li>
+              <li><a routerLink="/product-single">A propos de nous</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Blog Single</a></li>
+              <li><a href="#">Blog simple</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">404 Page</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
           </li><!-- /Pages -->
+          <!-- /emballage-->
+          <li class="nav-item dropdown dropdown-slide">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-delay="350"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Emballages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+              
+              <li><a routerLink="/product-single">Papier</a></li>
+              <li><a href="#">kraft</a></li>
+              <li><a href="#">Plastique</a></li>
+              <li><a href="#">boite</a></li>
+              <li><a href="#">Aluminium</a></li>
+            </ul>
+          </li><!-- / Emballage-->
           <!-- / Blog -->
           <li class="nav-item dropdown dropdown-slide">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-delay="350"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Shop.
+              Boutique.
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-              <li><a routerLink="/shop">Shop</a></li>
+              <li><a routerLink="/shop">Catalogue produits</a></li>
+              <li><a routerLink="/shop">Catalogue Emballages</a></li>
               <li><a routerLink="/product-single">Details du produit</a></li>
               <li><a routerLink="/checkout">Voir</a></li>
               <li><a routerLink="/cart">Carte</a></li>
@@ -45,16 +72,16 @@
           <li class="nav-item dropdown dropdown-slide">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-delay="350"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Account.
+            Compte.
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
-              <li><a routerLink="/dashboard">Dahsboard</a></li>
-              <li><a routerLink="/order">Orders</a></li>
-              <li><a routerLink="/address">Address</a></li>
+              <li><a routerLink="/dashboard">Tableau de bord</a></li>
+              <li><a routerLink="/order">Commandes</a></li>
+              <li><a routerLink="/address">Addresse</a></li>
               <li><a routerLink="/profile-details">Profile Details</a></li>
-              <li><a routerLink="/login">Login Page</a></li>
-              <li><a routerLink="/signup">SignUp Page</a></li>
-              <li><a routerLink="/forgot-password">Forgot Password</a></li>
+              <li><a routerLink="/login">Se connecter</a></li>
+              <li><a routerLink="/signup">S'inscrire</a></li>
+              <li><a routerLink="/forgot-password">Mot de passe oublié</a></li>
             </ul>
           </li><!-- / Account -->
         </ul>
